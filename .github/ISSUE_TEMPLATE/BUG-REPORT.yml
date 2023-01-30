@@ -50,9 +50,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: description
+    id: flows
     attributes:
-      label: "flow"
+      label: "ID's"
       description: Forneça um Trace-ID, Flow-ID ou Session-ID.
       placeholder: Por favor, forneça um Trace-ID, Flow-ID ou Session-ID.
     validations:
