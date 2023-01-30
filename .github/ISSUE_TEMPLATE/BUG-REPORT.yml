@@ -1,10 +1,21 @@
-name: "🐛 Abertura de Issues para os ambientes de Dev e Homol"
+name: "🚒 Abertura de Issues para os ambientes de Dev e Homol"
 description: Aqui você irá abrir uma issue para o time de SRE.
-title: "🐛 [Issue] - <title>"
+title: "🚒 [Issue] - <title>"
 labels: [
   "Issue"
 ]
 body:
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: "Ambiente"
+      description: Qual ambiente impactado ?
+      multiple: true
+      options:
+        - Dev
+        - Homol
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
