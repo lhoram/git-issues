@@ -4,6 +4,8 @@ title: "🚒 [Issue] - <title>"
 labels: [
   "Issue"
 ]
+assignees:
+  - ${{github.author}}
 body:
   - type: dropdown
     id: ambiente
