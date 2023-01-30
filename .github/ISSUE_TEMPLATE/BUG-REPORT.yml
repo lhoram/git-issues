@@ -31,8 +31,22 @@ body:
         - IM2
         - ES2
         - OU3
+        - DY5
+        - EM8
+        - EQ3
+        - HW(BUREAU)
+        - EK4(CARTÕES)
+        - AQ5(SIMILTY)
+        - AQ4
+        - DY9
+        - EK7
         - HOME
         - PISMO
+        - AUTH-PARTNER
+        - CARONTE
+        - CONSUL
+        - GIT
+        - JENKINS-PIPELINE
     validations:
       required: true
   - type: textarea
