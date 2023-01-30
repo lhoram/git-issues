@@ -83,7 +83,7 @@ body:
     id: logs
     attributes:
       label: "Logs"
-      description: Favor forneça os logs do seu erro.
+      description: Forneça os logs do seu erro.
       render: bash
     validations:
       required: false
