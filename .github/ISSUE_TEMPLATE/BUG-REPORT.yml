@@ -52,6 +52,14 @@ body:
   - type: textarea
     id: description
     attributes:
+      label: "id"
+      description: Forneça um Trace-ID, Flow-ID ou Session-ID.
+      placeholder: Por favor, forneça um Trace-ID, Flow-ID ou Session-ID.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
       label: "Descrição"
       description: Descreva o que ocorre na sua experiência.
       placeholder: Por favor, forneça uma descrição clara e concisa do problema. Inclua todos os contextos e exemplos relevantes.
