@@ -1,6 +1,6 @@
 name: "🚒 Abertura de Issues para os ambientes de Dev e Homol"
 description: Aqui você irá abrir uma issue para o time de SRE.
-title: "🚒 [Issue] - <title>"
+title: "🚒 [Issue] - <Título da issue>"
 labels: [
   "Issue"
 ]
@@ -18,12 +18,29 @@ body:
         - Homol
     validations:
       required: true
+  - type: dropdown
+    id: sigla
+    attributes:
+      label: "Sigla"
+      description: Em qual sigla é o impactado ?
+      multiple: true
+      options:
+        - EJ9
+        - EV8
+        - PW2
+        - IM2
+        - ES2
+        - OU3
+        - HOME
+        - PISMO
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
       label: "Descrição"
       description: Descreva o que ocorre sua experiência.
-      placeholder: Short and explicit description of your incident...
+      placeholder: Por favor, forneça uma descrição clara e concisa do problema. Inclua todos os contextos e exemplos relevantes.
     validations:
       required: true
   - type: input
