@@ -58,6 +58,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: cpf
+    attributes:
+      label: "CPF/Massa"
+      description: Forneça a massa ou cpf utilizado no teste.
+    validations:
+      required: true
+  - type: textarea
     id: description
     attributes:
       label: "Descrição"
