@@ -53,7 +53,7 @@ body:
     id: description
     attributes:
       label: "Descrição"
-      description: Descreva o que ocorre sua experiência.
+      description: Descreva o que ocorre na sua experiência.
       placeholder: Por favor, forneça uma descrição clara e concisa do problema. Inclua todos os contextos e exemplos relevantes.
     validations:
       required: true
