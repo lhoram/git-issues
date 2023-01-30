@@ -22,7 +22,7 @@ body:
     id: sigla
     attributes:
       label: "Sigla"
-      description: Em qual sigla é o impactado ?
+      description: Em qual sigla é o impacto ?
       multiple: true
       options:
         - EJ9
@@ -43,32 +43,23 @@ body:
       placeholder: Por favor, forneça uma descrição clara e concisa do problema. Inclua todos os contextos e exemplos relevantes.
     validations:
       required: true
-  - type: input
-    id: reprod-url
-    attributes:
-      label: "Reproduction URL"
-      description: Please enter your GitHub URL to provide a reproduction of the issue
-      placeholder: ex. https://github.com/USERNAME/REPO-NAME
-    validations:
-      required: true
   - type: textarea
     id: reprod
     attributes:
-      label: "Reproduction steps"
-      description: Please enter an explicit description of your issue
+      label: "Passos para reproduzir"
+      description: Descreva como você gostaria que o sistema se comportasse.
       value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+          1. Passo 1
+          2. Passo 2
+          3. Passo 3
       render: bash
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshot
     attributes:
       label: "Screenshots"
-      description: If applicable, add screenshots to help explain your problem.
+      description: Se aplicável, inclua screenshots para ajudar a explicar o problema.
       value: |
         ![DESCRIPTION](LINK.png)
       render: bash
@@ -78,33 +69,7 @@ body:
     id: logs
     attributes:
       label: "Logs"
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: Favor forneça os logs do seu erro.
       render: bash
-    validations:
-      required: false
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: "Browsers"
-      description: What browsers are you seeing the problem on ?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-        - Opera
-    validations:
-      required: false
-  - type: dropdown
-    id: os
-    attributes:
-      label: "OS"
-      description: What is the impacted environment ?
-      multiple: true
-      options:
-        - Windows
-        - Linux
-        - Mac
     validations:
       required: false
