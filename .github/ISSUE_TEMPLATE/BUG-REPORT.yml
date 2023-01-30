@@ -1,15 +1,15 @@
-name: "🐛 Bug Report"
-description: Create a new ticket for a bug.
-title: "🐛 [BUG] - <title>"
+name: "🐛 Abertura de Issues para os ambientes de Dev e Homol"
+description: Aqui você irá abrir uma issue para o time de SRE.
+title: "🐛 [Issue] - <title>"
 labels: [
-  "bug"
+  "Issue"
 ]
 body:
   - type: textarea
     id: description
     attributes:
-      label: "Description"
-      description: Please enter an explicit description of your issue
+      label: "Descrição"
+      description: Descreva o que ocorre sua experiência.
       placeholder: Short and explicit description of your incident...
     validations:
       required: true
