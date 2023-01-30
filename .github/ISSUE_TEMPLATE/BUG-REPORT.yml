@@ -52,7 +52,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: "id"
+      label: "flow"
       description: Forneça um Trace-ID, Flow-ID ou Session-ID.
       placeholder: Por favor, forneça um Trace-ID, Flow-ID ou Session-ID.
     validations:
